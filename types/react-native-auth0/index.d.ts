@@ -315,7 +315,7 @@ export default class Auth0 {
 export class Auth0ContextInterface {
     user: any;
     error: any;
-    authorize(parameters: AuthorizeParams, options?: AuthorizeOptions): Promise<void>;
+    authorize(parameters?: AuthorizeParams, options?: AuthorizeOptions): Promise<void>;
     clearSession(): Promise<void>;
     getCredentials(scope?: string, minTtl?: number, parameters?: any): Promise<Credentials>;
     clearCredentials(): Promise<void>;
